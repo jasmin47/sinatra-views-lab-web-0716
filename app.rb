@@ -4,5 +4,21 @@ class App < Sinatra::Base
 		erb :index
 	end
 
+	get '/hello' do
+		erb :hello
+		status = 200
+	end
+
+	get '/goodbye' do
+		#status = 200
+		erb :goodbye
+
+	end
+
+	get '/date' do
+		#status = 200
+		erb :date
+
+	end
 
 end
